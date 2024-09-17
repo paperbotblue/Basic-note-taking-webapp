@@ -33,6 +33,7 @@ app.get('/delete/:fileName', function(req, res) {
   })
 })
 
+
 app.post('/editfile', function(req, res) {
   fs.rm(`./files/${req.body.oldTitle}`, function(err) {
     if(err) console.log(err);
